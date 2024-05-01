@@ -24,7 +24,7 @@
       <div class="container">
         <a
           class="header__logo"
-          href="https://seriserj.github.io/goit-markup-hw-04/"
+          href="https://seriserj.github.io/goit-markup-hw-05/"
           ><p class="p__logo"><span class="span__logo">Web</span>Studio</p></a
         >
         <nav class="header__navigation">
@@ -56,7 +56,7 @@
           EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS
         </h1>
         <div class="div-button">
-          <button type="button" class="hero-section__service">
+          <button data-modal-open type="button" class="hero-section__service">
             Request our service
           </button>
         </div>
@@ -313,12 +313,13 @@
           >
           <p class="footer-addres__addres">695 Park Ave, NY 10065, USA</p>
 
-          <a href="https://seriserj.github.io/goit-markup-hw-04/"
+          <a href="https://seriserj.github.io/goit-markup-hw-05/"
             ><p><span>info@devstudio.com</span></p></a
           >
           <a href="tel:+1212-772-4150">+1212-772-4150</a>
         </address>
       </div>
+
       <!--Footer Section social-->
 
       <section class="footer-social">
@@ -351,5 +352,12 @@
         </div>
       </section>
     </footer>
+
+    <div data-modal class="is-hidden">
+      <div data-modal-content>
+        <button data-modal-close type="button">X</button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
