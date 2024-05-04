@@ -89,10 +89,33 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: var(--black);
+    position: relative;
 }
 .header__navigation a:hover {
     color: var(--blue);
 }
+
+.header__navigation a::after,
+.header__navigation a:after {
+    content: '';
+    height: 4px;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: var(--blue);
+    transition-duration: 0.5s;
+    transition-property: width;
+}
+
+.header__navigation a:hover::after,
+.header__navigation a:active::after {
+    width: 100%;
+}
+
+
+
 .header__info {
     display: flex;
     gap: 15px;
